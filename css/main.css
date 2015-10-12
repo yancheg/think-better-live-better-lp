@@ -12,7 +12,7 @@ body {
     font-weight: 700;
 }
 
-.join-us-btn, .join-us-btn:hover {
+.join-us-btn, #join-us:hover {
     background-color: #9ccc3e;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -21,9 +21,7 @@ body {
     padding: 7px 15px;
     margin: 50px auto -20px;
 }
-.join-us-btn:hover {
-    margin: 50px auto 0;
-}
+
 .section-header{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
