@@ -1,0 +1,220 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.light {
+    font-weight: 300;
+}
+.semi-bold {
+    font-weight: 600;
+}
+.bold {
+    font-weight: 700;
+}
+
+.join-us-btn, .join-us-btn:hover {
+    background-color: #9ccc3e;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 14pt;
+    padding: 7px 15px;
+    margin: 50px auto -20px;
+}
+
+.section-header{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #192833;
+    font-size: 24pt;
+    text-transform: uppercase;
+    margin: 75px 0 53px;
+}
+.section-header:after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid #192833;
+    height: 1px;
+    width: 5%;
+    margin: 10px auto 0;
+    box-shadow: 1px 1px 1px #192833;
+}
+/** Header section */
+.header {
+    background: url('../images/header.png') center /cover no-repeat fixed;
+    height: 100vh;
+}
+.header-intro {
+    color: #fff;
+}
+.header-intro h1 {
+    font-family: 'Oxygen' sans-serif;
+    text-transform: uppercase;
+}
+.header-intro p {
+    font-family: 'Open Sans' sans-serif;
+}
+.logo-box {
+    background: url('../images/logo.png') center no-repeat;
+    background-size: 100%;
+    width: 215px;
+    height: 185px;
+}
+
+.hexagon span {
+    color: #fff;
+    font-size: 32pt;
+    line-height: 120px;
+    font-weight: 700;
+}
+
+.timer-date {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16pt;
+    font-weight: 600;
+}
+/** Experience section */
+section.experience .container {
+    border-bottom: 1px solid #ebeef0;
+}
+
+.experience-banner{
+    background: url('../images/experience.png') center center no-repeat;
+    min-height: 220px;
+}
+.experience-text {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    color: #1a2833;
+    padding: 15px;
+}
+
+/** Presenters section */
+.presenter-title {
+    margin-top: 0;
+    font-size: 18pt;
+    color: #1a2833;
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+.presenter-location {
+    color: #7f8d99;
+    font-size: 11pt;
+    background: url('../images/location.png') left center no-repeat;
+    padding-left: 15px;
+
+}
+.presenter-text {
+    color: #1a2833;
+    font-size: 12pt;
+}
+
+/** Shedule section */
+.shedule-time {
+    padding-left: 20px;
+    background: url("../images/timer.png") left center no-repeat;
+}
+.shedule table,
+.shedule table>thead>tr>th,
+.shedule table>tbody>tr>td{
+    border: 2px solid rgba(127, 127, 127, .5);
+}
+/** FAQ section */
+.faq-box .panel {
+    border: 1px solid #000;
+    border-radius: 0;
+}
+.faq-box .panel-heading {
+    background: #fff;
+}
+/** Event section */
+section.event {
+    background: url('../images/logistics-bg.png') center center no-repeat;
+}
+.event-logo {margin: 40px auto}
+.event-logo span { line-height: 85px; }
+.event-logo span+span {
+    font-size: 12pt;
+    line-height: 0px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+.event-header {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.event-location {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16pt;
+}
+.event-contacts {
+    color: #fff;
+    text-align: center;
+    margin: 40px 0 -60px;
+    font-size: 12pt;
+}
+.event-subscribe {
+    margin: 50px 0;
+}
+.event-subscribe button {
+    margin-bottom: 0;
+}
+/** Subscribe section */
+.subscribe {
+    background-color: #9dcc3e;
+    height: 225px;
+}
+
+.subscribe input {
+    height: 30%;
+}
+
+.hexagon {
+    position: relative;
+    width: 75px;
+    height: 130px;
+    margin: 8px auto;
+    border-top: solid 5px #fff;
+    border-bottom: solid 5px #fff;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 53px;
+    height: 52px;
+    -webkit-transform: scaleY(1.75) rotate(45deg);
+    -ms-transform: scaleY(1.75) rotate(45deg);
+    transform: scaleY(1.75) rotate(45deg);
+    background-color: inherit;
+    top: 34px;
+}
+
+.hexagon:before {
+    right: -27px;
+    border-top: solid 4px #fff;
+    border-right: solid 4px #fff;
+}
+
+.hexagon:after {
+    left: -27px;
+    border-bottom: solid 4px #fff;
+    border-left: solid 4px #fff;
+}
+
+
+footer {
+    height: 150px;
+    background: url('../images/footer-bg1.png') right bottom no-repeat,
+                url('../images/footer-bg2.png') 5% center no-repeat,
+                url('../images/footer-bg3.png') 15% bottom no-repeat;
+}
