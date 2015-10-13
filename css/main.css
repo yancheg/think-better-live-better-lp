@@ -113,7 +113,8 @@ section.experience .container {
     font-size: 11pt;
     background: url('../images/location.png') left center no-repeat;
     padding-left: 15px;
-
+    display: block;
+    margin: 5px 0 15px;
 }
 .presenter-text {
     color: #1a2833;
@@ -294,7 +295,37 @@ section.event {
     border-bottom: solid 4px #fff;
     border-left: solid 4px #fff;
 }
-
+/** Share section */
+.share-box {
+    display: block;
+    padding: 0;
+    width: 100%;
+}
+.share-box li {
+    display: inline-block;
+    width: 45%;
+    margin: 0 2%;
+}
+.share-box li a{
+    display: block;
+    color: #7d8388;
+    font-weight: 600;
+    font-size: 12pt;
+    width: 100%;
+    height: 50px;
+    margin: 25px auto;
+    border: 2px solid #ebeef0;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 50px;
+}
+.share-box .fa-twitter { color: #4ccaff; margin-right: 3px; }
+.share-box .fa-facebook { color: #227fd6; margin-right: 3px; }
+.share-box li a:hover {
+    border-color: #227fd6;
+    color: #227fd6;
+    text-decoration: none;
+}
 /** Footer Section */
 footer {
     height: 150px;
