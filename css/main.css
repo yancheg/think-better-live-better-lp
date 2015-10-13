@@ -226,8 +226,7 @@ section.event {
     position: relative;
 }
 .subscribe form {
-    position: absolute;
-    width: 100%;
+    position: relative;
     top: 50%;
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
@@ -379,4 +378,51 @@ footer {
 
 #map {
     height: 400px;
+}
+
+/** Mobile styles */
+@media (max-width: 360px) {
+    .logo-box {
+        height: 100px;
+        margin: 10px auto;
+    }
+    .play-box {
+        height: 70px;
+        width: 70px;
+    }
+    .hexagon {
+        width: 30px;
+        height: 60px;
+    }
+    .hexagon:before,.hexagon:after {
+        width: 24px;
+        height: 24px;
+        top: 13px;
+    }
+    .hexagon:before { right: -13px}
+    .hexagon:after { left: -13px}
+    .hexagon span {
+        line-height: 50px;
+        font-size: 14pt;
+    }
+
+    .timer-date {
+        font-size: 9pt;
+    }
+
+    .subscribe form .form-group {
+        width: 100%;
+    }
+
+    .experience-text {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    footer {
+        background: none;
+    }
+    .copyright {
+        padding-left: 15px;
+    }
 }
