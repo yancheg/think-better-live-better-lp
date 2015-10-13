@@ -445,7 +445,7 @@ footer {
         font-weight: 700;
     }
     .event-logo span+span { margin-left: -5px;}
-    .event-contacts span { display: block;}
+    .event-contacts span:not(.glyphicon) { display: block;}
 
     .subscribe form .form-group {
         width: 100%;
