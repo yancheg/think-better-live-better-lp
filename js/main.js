@@ -1,6 +1,7 @@
 /**
  * Created by Admin on 08.10.15.
  */
+var player;
 $(document).ready(function(){
     $('.timer').countdown('2016/01/9', function(event) {
         $('#timer-days').html(event.strftime('<span>%-D</span>'));
@@ -39,32 +40,8 @@ $(document).ready(function(){
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            width: '570',
-            videoId: 'M7lc1UVf-VE',
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
-
-    function onPlayerReady(event) {
-        // event.target.playVideo();
-    }
-
-    function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-
-        }
-    }
-    function stopVideo() {
-        player.stopVideo();
-    }
-
     $('#Video').on('shown.bs.modal', function(){
+        console.log(player);
         player.playVideo();
     });
     $('#Video').on('hide.bs.modal', function(){
@@ -79,3 +56,27 @@ $(document).ready(function(){
         }, 1000);
     });
 });
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        width: '570',
+        videoId: 'M7lc1UVf-VE',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    // event.target.playVideo();
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+
+    }
+}
+function stopVideo() {
+    player.stopVideo();
+}

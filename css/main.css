@@ -79,7 +79,7 @@ body {
 }
 /** Header section */
 .header {
-    background: url('../images/header_old.jpg') center /cover no-repeat fixed;
+    background: url('../images/header.jpg') center /cover no-repeat fixed;
 }
 .header-intro {
     color: #fff;
@@ -353,6 +353,7 @@ footer {
                 url('../images/footer-bg2.png') 5% center no-repeat,
                 url('../images/footer-bg3.png') 15% bottom no-repeat;
     padding-top: 30px;
+    position: relative;
 }
 
 .footer-links {
@@ -380,6 +381,11 @@ footer {
     outline: none;
 }
 
+.command-media-link-box {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
 /** Modals section */
 .full-screen .modal-dialog {
     width: 100%;
