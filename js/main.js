@@ -3,6 +3,13 @@
  */
 var player;
 $(document).ready(function(){
+    $('#menu').affix({
+        offset: {
+            top: function () {
+                return (this.top = $('#header').outerHeight(true))
+            }
+        }
+    });
     $('.timer').countdown('2016/01/9', function(event) {
         $('#timer-days').html(event.strftime('<span>%-D</span>'));
         $('#timer-hours').html(event.strftime('<span>%H</span>'));
@@ -48,11 +55,11 @@ $(document).ready(function(){
         player.stopVideo();
     });
 
-    $(document).on('click', '#join-us', function(){
-        var subscribeOffset = $('section.subscribe').offset().top;
+    $(document).on('click', '.scroll-bnt', function(){
+        var targetOffset = $($(this).data('target')).offset().top;
 
         $('body,html').animate({
-            scrollTop: subscribeOffset
+            scrollTop: targetOffset
         }, 1000);
     });
 });

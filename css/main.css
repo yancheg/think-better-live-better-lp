@@ -11,6 +11,30 @@ body {
 .bold {
     font-weight: 700;
 }
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,.75);
+}
+.menu-list li.scroll-bnt {
+    display: inline-block;
+    line-height: 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+.menu-list li.scroll-bnt a{
+    color: #9ccc3e;
+    font-size: 12pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu-list li.scroll-bnt a:hover,
+.menu-list li.scroll-bnt.active a {
+    background-color: #9ccc3e;
+    color: #fff;
+    border-radius: 4px;
+}
 
 .join-us-btn, #join-us:hover {
     background-color: #9ccc3e;
@@ -92,7 +116,7 @@ body {
     font-family: 'Open Sans' sans-serif;
 }
 .logo-box {
-    background: url('../images/logo.png') center no-repeat;
+    background: url('../images/Logo_whiteBG.png') center no-repeat;
     background-size: auto 100%;
     height: 150px;
     margin: 20px auto;

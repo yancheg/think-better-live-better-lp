@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
 </head>
-<body>
+<body data-spy="scroll" data-target="#menu-spy-block">
 
 <section id="header" class="header">
     <div class="container">
@@ -46,6 +46,24 @@
     </div>
 </section>
 
+<nav id="menu">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" id="menu-spy-block">
+                <ul class="nav pull-right menu-list">
+                    <li class="scroll-bnt" data-target="#experience"><a href="#experience">The Experience</a></li>
+                    <li class="scroll-bnt" data-target="#presenters"><a href="#presenters">Presenters</a></li>
+                    <li class="scroll-bnt" data-target="#shedule"><a href="#shedule">Schedule</a></li>
+                    <li class="scroll-bnt" data-target="#event"><a href="#event">Location</a></li>
+                    <li class="scroll-bnt" data-target="#faq"><a href="#faq">FAQs</a></li>
+                    <li class="scroll-bnt" data-target="#testimonials"><a href="#testimonials">Testimonials</a></li>
+                    <li class="scroll-bnt" data-target="#subscribe"><a href="#subscribe">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <section id="experience" class="experience">
     <div class="container">
         <div class="row">
@@ -73,7 +91,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <button class="btn join-us-btn bold" id="join-us">Join us and learn more</button>
+                <button class="btn join-us-btn bold scroll-bnt" id="join-us" data-target="#subscribe">Join us and learn more</button>
             </div>
         </div>
     </div>
