@@ -173,6 +173,9 @@ section.experience .container {
     color: #1a2833;
     padding: 15px;
 }
+.experience-text p{
+    margin: 5px 0 5px;
+}
 
 /** Presenters section */
 .presenter-title {
