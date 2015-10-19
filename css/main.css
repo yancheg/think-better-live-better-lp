@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
 }
 
 .light {
@@ -15,7 +16,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: rgba(255,255,255,.75);
+    background-color: #fff;
 }
 .menu-list li.scroll-bnt {
     display: inline-block;
@@ -36,13 +37,17 @@ body {
     border-radius: 4px;
 }
 
-.join-us-btn, #join-us:hover {
+.join-us-btn, #join-us{
     background-color: #9ccc3e;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-size: 14pt;
     padding: 7px 15px;
+    margin: 50px auto 0;
+}
+
+#join-us, #join-us:hover {
     margin: 50px auto -20px;
 }
 
@@ -158,7 +163,8 @@ section.experience .container {
 
 .experience-banner{
     background: url('../images/experience.jpg') center center no-repeat;
-    min-height: 220px;
+    background-size: 100% auto;
+    min-height: 290px;
 }
 .experience-text {
     -webkit-column-count: 2;
@@ -166,13 +172,12 @@ section.experience .container {
     column-count: 2;
     color: #1a2833;
     padding: 15px;
-    font-size: 12pt;
 }
 
 /** Presenters section */
 .presenter-title {
     margin-top: 0;
-    font-size: 18pt;
+    font-size: 16pt;
     color: #1a2833;
     font-weight: 600;
     font-family: 'Open Sans';
@@ -187,7 +192,7 @@ section.experience .container {
 }
 .presenter-text {
     color: #1a2833;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 /** Shedule section */
@@ -205,7 +210,6 @@ section.experience .container {
 }
 .shedule-text {
     padding: 0 0 10px;
-    font-size: 12pt;
 }
 /** FAQ section */
 .panel-body { border: 0 !important; }
@@ -246,7 +250,7 @@ section.experience .container {
 }
 /** Event section */
 section.event {
-    background: url('../images/logistics-bg.png') center center /cover no-repeat;
+    background: url('../images/logistics.jpg') center center /cover no-repeat;
 }
 .event-logo {margin: 50px auto 0;}
 .event-logo span { line-height: 85px; }
@@ -319,17 +323,17 @@ section.event {
     border-radius: 4px;
     border: 1px solid #b8e561;
     outline: none;
-    color: #b8e561;
+    color: #000;
     padding-left: 15px;
     font-weight: 600;
 }
 .subscribe input:focus {
     color: #000;
 }
-.subscribe input::-webkit-input-placeholder {color:#b8e561;}
-.subscribe input::-moz-placeholder          {color:#b8e561;}
-.subscribe input:-moz-placeholder           {color:#b8e561;}
-.subscribe input:-ms-input-placeholder      {color:#b8e561;}
+.subscribe input::-webkit-input-placeholder {color:#000;}
+.subscribe input::-moz-placeholder          {color:#000;}
+.subscribe input:-moz-placeholder           {color:#000;}
+.subscribe input:-ms-input-placeholder      {color:#000;}
 
 .subscribe .submit-btn {
     background-color: #fd7125;
@@ -379,6 +383,7 @@ footer {
                 url('../images/footer-bg3.png') 15% bottom no-repeat;
     padding-top: 30px;
     position: relative;
+    font-size: 12pt;
 }
 
 .footer-links {
@@ -406,11 +411,6 @@ footer {
     outline: none;
 }
 
-.command-media-link-box {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-}
 /** Modals section */
 .full-screen .modal-dialog {
     width: 100%;
@@ -466,6 +466,9 @@ footer {
         width: 48px;
         height: 48px;
         top: 31px;
+    }
+    .experience-banner {
+        min-height: 80px;
     }
     .event-logo:before { right: -24px}
     .event-logo:after { left: -24px}
