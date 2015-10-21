@@ -61,6 +61,7 @@ section{
     margin: 8px auto;
     border-top: solid 5px #fff;
     border-bottom: solid 5px #fff;
+    z-index: 0;
 }
 
 .hexagon:before,
