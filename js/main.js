@@ -48,7 +48,6 @@ $(document).ready(function(){
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     $('#Video').on('shown.bs.modal', function(){
-        console.log(player);
         player.playVideo();
     });
     $('#Video').on('hide.bs.modal', function(){
@@ -67,7 +66,7 @@ $(document).ready(function(){
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         width: '570',
-        videoId: 'M7lc1UVf-VE',
+        videoId: 'sRc84AZ0efY',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -81,7 +80,8 @@ function onPlayerReady(event) {
 
 function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
-
+        console.log($('#Video'));
+        $('#Video').modal('toggle');
     }
 }
 function stopVideo() {

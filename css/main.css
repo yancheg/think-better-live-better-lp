@@ -113,13 +113,25 @@ body {
 .header-intro {
     color: #fff;
 }
-.header-intro h1 {
-    font-family: 'Oxygen' sans-serif;
-    text-transform: uppercase;
-}
+
 .header-intro p {
     font-family: 'Open Sans' sans-serif;
 }
+
+.header-intro p:last-child {
+    font-size: 18pt;
+}
+
+.header-title {
+    font-family: 'Oxygen' sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    display: block;
+}
+.small-letters {
+    text-transform: lowercase;
+}
+
 .logo-box {
     background: url('../images/Logo_whiteBG.png') center no-repeat;
     background-size: auto 100%;
@@ -162,7 +174,7 @@ section.experience .container {
 }
 
 .experience-banner{
-    background: url('../images/experience.jpg') center center no-repeat;
+    background: url('../images/experience-3.jpg') center center no-repeat;
     background-size: 100% auto;
     min-height: 290px;
 }
@@ -170,8 +182,11 @@ section.experience .container {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
     color: #1a2833;
-    padding: 15px;
+    padding: 15px 0;
 }
 .experience-text p{
     margin: 5px 0 5px;
@@ -180,7 +195,7 @@ section.experience .container {
 /** Presenters section */
 .presenter-title {
     margin-top: 0;
-    font-size: 16pt;
+    font-size: 14pt;
     color: #1a2833;
     font-weight: 600;
     font-family: 'Open Sans';
@@ -270,6 +285,12 @@ section.event {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
+}
+.event-header span{
+    display: block;
+}
+span.middle{
+    font-size: 16pt;
 }
 .event-location {
     text-align: center;
@@ -381,6 +402,7 @@ section.event {
 /** Footer Section */
 footer {
     height: 150px;
+    background-color: #fff !important;
     background: url('../images/footer-bg1.png') right bottom no-repeat,
                 url('../images/footer-bg2.png') 5% center no-repeat,
                 url('../images/footer-bg3.png') 15% bottom no-repeat;
@@ -400,12 +422,17 @@ footer {
     color: #2c3840;
 }
 
-.footer-links li {
+
+
+.command-link, .footer-links li {
     display: inline-block;
     font-size: 12pt;
     font-weight: 600;
     margin-right: 15px;
 }
+.command-link,
+.command-link:hover,
+.command-link:visited,
 .footer-links li a,
 .footer-links li a:visited{
     color: #181d21;

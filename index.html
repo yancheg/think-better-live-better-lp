@@ -1,3 +1,20 @@
+<!--
+Aaron Lynn: Additional Changes
+=====
+1. Logos get cut in half on widescreen, need to fix. Not sure how?
++ 2. Header - date larger
++ 3. Experience photo - use a stock photo included in this folder.
++ 4. Experience text - increase space between columns
++ 5. Presenters - Switch Mike Vardy and Joshua Becker positions
++ 6. FAQS - change to lower case “s” with no apostrophe
++ 7. FAQS - Move customer names to end of quote (like standard testimonials), make it same size at the testimonial font, use a horizontal rules to separate, add in city/state back in after the name.
++ 8. Footer - should be Marc & Angel, LLC
++ 9. Privacy/Terms - need to be bolded headlines
+10. Remove Twitter/Facebook icons and replace with “share on twitter”, “share on Facebook”, “share on LinkedIn” - google Twitter/Facebook share buttons
++ 11. W Austin section - no full stop after Zip Code, use a comma instead and move zip code to after "United States". Change "United States" to "USA".
++ 12. Add in intro video: https://youtu.be/sRc84AZ0efY
+
+ -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,8 +35,8 @@
             <div class="logo-box center-block"></div>
         </div>
         <div class="row header-intro">
-            <h1 class="text-center">Shifts Your Mindset</h1>
-            <p class="text-center light">Unleashes Your Happiness</p>
+            <h1 class="text-center header-title">Shifts Your Mindset</h1>
+            <span class="text-center header-title">Unleashes Your Happiness</span>
             <p class="text-center light">with Asian Efficiency and Marc & Angel Hack Life</p>
             <p class="text-center bold">January 9, 2016 Austin, TX, USA</p>
         </div>
@@ -47,11 +64,11 @@
     </div>
 </section>
 
-<nav id="menu">
+<nav id="menu" class="hidden-xs hidden-sm">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12" id="menu-spy-block">
-                <ul class="nav pull-right menu-list">
+            <div class="col-md-12 center-block text-center" id="menu-spy-block">
+                <ul class="nav menu-list">
                     <li class="scroll-bnt" data-target="#experience"><a href="#experience">The Experience</a></li>
                     <li class="scroll-bnt" data-target="#presenters"><a href="#presenters">Presenters</a></li>
                     <li class="scroll-bnt" data-target="#shedule"><a href="#shedule">Schedule</a></li>
@@ -126,7 +143,7 @@
                         <img src="./images/2.png" class="img-responsive center-block presenter-photo">
                     </div>
                     <div class="col-md-9 col-xs-12">
-                        <h3 class="presenter-title">Mark & Angel Chernoff</h3>
+                        <h3 class="presenter-title">Marc & Angel Chernoff</h3>
                         <p class="presenter-text text-left">Marc and Angel Chernoff are professional coaches, full-time students of life, admirers of the human spirit, and have beenrecognized by Forbes as having “one of the most popular personal development blogs.” Through their blog, book, courses,and coaching, they’ve spent the past decade writing about and teaching proven strategies for finding lasting happiness, love,and peace.</p>
                         <p class="presenter-text text-left">Get their tools to identify and transform the limiting beliefs that keep you stuck at their website, <a href="http://marcandangel.com/" target="_blank">Marc and Angel.Hack Life</a></p>
                     </div>
@@ -181,14 +198,11 @@
             <div class="col-md-6 col-xs-12">
                 <div class="row">
                     <div class="col-md-3 col-xs-12">
-                        <img src="./images/mike-vardy.png" class="img-responsive center-block presenter-photo">
+                        <img src="./images/Joshua-Becker.png" data-src="holder.js/135x115/auto/#555:#555" class="img-responsive center-block presenter-photo">
                     </div>
                     <div class="col-md-9 col-xs-12">
-                        <h3 class="presenter-title">Mike Vardy</h3>
-                        <p class="presenter-text text-left">Mike Vardy is a husband, father, writer, speaker, and productivity strategist (or "productivityist" for short).</p>
-                        <p class="presenter-text text-left">In addition to being the founder and chief writer at , he continues to contribute guest articles to several blogsProductivityiston the topic of productivity, time, and task management, including 99u, The Huffington Post, SUCCESS Magazine, andLifehacker. He has served as Managing Editor at Lifehack, and as an editor at The Next Web and WorkAwesome.</p>
-                        <p class="presenter-text text-left">Along with his written work, he has given talks on productivity and technology, including a TEDx talk, a panel at SXSW, andfacilitating a three-day workshop for creativeLIVE. He currently hosts The Productivityist Podcast, a weekly show thatexamines personal productivity and tactical approaches to work and life.</p>
-                        <p class="presenter-text text-left">Mike lives in Victoria, BC, Canada with his amazing wife, daughter, and son.</p>
+                        <h3 class="presenter-title">Joshua Becker</h3>
+                        <p class="presenter-text text-left">Joshua Becker inspires people to consider the practical benefits of owning less and living more. His rational approach tominimalism has made him one of today’s leading voices in the simple-living movement. He is the founder and editor of Becoming Minimalist and the best-selling author of Simplify and Clutterfree with Kids. Currently, he lives in sunny Peoria, Arizona with his wife and two young kids.</p>
                     </div>
                 </div>
             </div>
@@ -238,11 +252,13 @@
             <div class="col-md-6 col-xs-12">
                 <div class="row">
                     <div class="col-md-3 col-xs-12">
-                        <img src="./images/Joshua-Becker.png" data-src="holder.js/135x115/auto/#555:#555" class="img-responsive center-block presenter-photo">
+                        <img src="./images/mike-vardy.png" class="img-responsive center-block presenter-photo">
                     </div>
                     <div class="col-md-9 col-xs-12">
-                        <h3 class="presenter-title">Joshua Becker</h3>
-                        <p class="presenter-text text-left">Joshua Becker inspires people to consider the practical benefits of owning less and living more. His rational approach tominimalism has made him one of today’s leading voices in the simple-living movement. He is the founder and editor of Becoming Minimalist and the best-selling author of Simplify and Clutterfree with Kids. Currently, he lives in sunny Peoria, Arizona with his wife and two young kids.</p>
+                        <h3 class="presenter-title">Mike Vardy</h3>
+                        <p class="presenter-text text-left">Mike Vardy is a husband, father, writer, speaker, and productivity strategist (or "productivityist" for short).</p>
+                        <p class="presenter-text text-left">In addition to being the founder and chief writer at Productivityist, he has given talks on productivity and technology, including a TEDx talk, a panel at SXSW, and facilitating a three-day workshop for creativeLIVE. He currently hosts The Productivityist Podcast, a weekly show that examines personal productivity and tactical approaches to work and life.</p>
+                        <p class="presenter-text text-left">Mike lives in Victoria, BC, Canada with his amazing wife, daughter, and son.</p>
                     </div>
                 </div>
             </div>
@@ -280,7 +296,7 @@
                 <p class="shedule-text">
                     <span class="bold">THINK BETTER, LIVE BETTER</span> will be an immersive and invaluable experience taking place over one action-packed day in beautiful Austin,Texas.
                 </p>
-                <p class="shedule-text">What better way to kick off your day than with a series of morning keynote conversations that take you deep into the “Think Better, Live Better" topics -- ones that’ll serve as powerful, actionable moments of awakening. Then it's off to intimate workshops to actually put these strategies to work, followed by an open, interactive panel discussion with Marc and Angel Hack Life founders, Marc and Angel Chernoff and Asian Efficiency operators, Thanh Pham and Aaron Lynn.</p>
+                <p class="shedule-text">What better way to kick off your day than with a series of morning keynote conversations that take you deep into the "Think Better, Live Better" topics -- ones that will serve as powerful, actionable moments of awakening. Then it's off to intimate workshops to actually put these strategies to work, followed by an open, interactive panel discussion with your presenters.</p>
                 <p class="shedule-text">Just like you, we've also been to conferences where the sessions are so jam-packed that there isn't even time for a washroom break or to grab a cup of coffee.</p>
                 <p class="shedule-text">Think Better, Live Better will absolutely NOT be like that.</p>
                 <p class="shedule-text">We've set things up to be as attendee-friendly as possible - with regular breaks, plenty of time for lunch (which is provided!), time to apply what you'll be learning about, time to share your experiences and most importantly - time to come have fun, and connect with others who want the same things out of life as you do.</p>
@@ -341,12 +357,16 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2 class="event-header">Think Better, Live Better<br> will be held at<br> the W Austin</h2>
+                <h2 class="event-header">
+                    <span class="text-center">Think Better, Live Better</span>
+                    <span class="text-center middle">will be held at</span>
+                    <span class="text-center">the W Austin</span>
+                </h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="event-location">200 Lavaca Street  Austin, Texas, 78701. United States</div>
+                <div class="event-location">200 Lavaca Street  Austin, Texas, USA, 78701</div>
             </div>
         </div>
         <div class="row">
@@ -422,7 +442,7 @@
                 <h3 class="section-header">Accommodation</h3>
             </div>
             <div class="col-md-12">
-                <p>We've arranged a special conference rate with the W Austin for all our attendees - you'll be provided with a special online booking link onceyour ticket is confirmed.</p>
+                <p>We've arranged a special conference rate with the W Austin for all our attendees - you'll be provided with a special online booking link once your ticket is confirmed.</p>
                 <p>The standard rate (at time of writing) is $382/night. <span class="semi-bold">We've managed secure a special rate of $250/night just for our attendees!</span></p>
                 <p>Other accommodation options nearby include:</p>
                 <ul>
@@ -448,7 +468,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="section-header">General faq's</h2>
+                <h2 class="section-header">General faq<span class="small-letters">s</span></h2>
             </div>
         </div>
         <div class="row">
@@ -609,39 +629,39 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h3 class="presenter-title">Jacob Z</h3>
-                <!--<span class="presenter-location">Forth Worth, Texas, USA</span>-->
                 <p class="presenter-text text-left"><em>"Before I was a pastor I figured the job was just to study the Bible and care for people. Turns out, there's a lot of other work too! I have struggled with procrastination, failure to follow through on promises and deadlines, etc all my life . With those came the inevitable shamespiral of self-loathing that bottomed out in depression. <span class="semi-bold">The skills that Asian Efficiency has given me have been a major reason for myIn just a short time Irise from depression, increased productivity in work and personal life, and so much more passion for what I do.</span> have started waking up at 5, established morning and evening rituals, simplified the way I use my calendar, learned how to capture andschedule tasks, written my ideal week, gone paperless, and I love the feeling of having my frog done by 10am! Thanks a billion to the AEteam for helping me be #AsianEfficient!"</em></p>
+                <p class="presenter-title text-right">- Jacob Z</p>
+                <span class="presenter-location pull-right">Forth Worth, Texas, USA</span>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h3 class="presenter-title">Ian M Volcano</h3>
                 <p class="presenter-text text-left"><em>"After many years of trying to keep life going spontaneously and just "winging it"... I found myself completely overwhelmed and uninspired atage 48. I started looking online for guidance. Your site stands head and shoulders above anything else I've found, and offers a workable blueprint to get out of my funk and back to a manageable, successful, and happy life. I have hope again. I think you're doing something very meaningful. Please keep refining and developing your program. You're doing excellent work. Much aloha from Hawaii."</em></p>
+                <p class="presenter-title text-right">- Ian M Volcano</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h3 class="presenter-title">Christine B</h3>
                 <p class="presenter-text text-left"><em>"Having had a very busy work life, which seemed to cover the whole gamut of technology coming into the workplace, I find at 70 I'm busier than ever. I still have a home to keep organised, a family and grandchildren to stay in touch with and am a member of a very active U3A(University of the 3rd Age). With events to organise, classes to attend, research to do and a large email Inbox to deal with I need all those hints, tips, nudges and reminders to stay on top of things. I try most ideas you suggest and find that you come up with very practical solutions.Keep them coming... new ideas bring new energy into the mix."</em></p>
+                <p class="presenter-title text-right">- Christine B</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h3 class="presenter-title">Conor M</h3>
                 <p class="presenter-text text-left"><em>Marc and Angel, I just wanted to let you know how much your daily guidance makes a difference in my life. You have picked me up during some of my lowest points. Your writing and guidance really hits home for me, and provides me a daily dose of self-awareness and comfort. I really can't thank you both enough!  Best Regards</em></p>
+                <p class="presenter-title text-right">- Conor M</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h3 class="presenter-title">Gail M</h3>
                 <p class="presenter-text text-left"><em>Hi Angel and Marc. Your advice often seems like it’s tailored just for me. Your emails and articles speak to me as I contemplate making positive changes in my life. I was finding it hard to articulate the changes I wanted to make as I turn 50 tomorrow, and your thoughts have helped me finally make a decision I feel great about. Synchronicity perhaps, but I had tears in my eyes when I realized I had finally figured itout.  Thank you. Keep sharing your wisdom! </em></p>
+                <p class="presenter-title text-right">- Gail M</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h3 class="presenter-title">Jessamy S</h3>
                 <p class="presenter-text text-left"><em>Last year you guys got me through one of the hardest times of my life and now things are a million times better. Due primarily to the words of encouragement and strategies I received from you, I am a stronger and happier human being.   Thank you</em></p>
+                <p class="presenter-title text-right">- Jessamy S</p>
             </div>
         </div>
     </div>
@@ -652,8 +672,10 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3 col-xs-12">
                 <ul class="share-box">
-                    <li><a href="https://twitter.com/thinklivebetter" class="twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
-                    <li><a href="https://www.facebook.com/Think-Better-Live-Better-1668127503422633/" class="facebook"><i class="fa fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://twitter.com/home?status=" target="_blank">Share on Twitter</a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank">Share on Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank">Share on LinkedIn</a></li>
+                    <li><a href="https://plus.google.com/share?url=" target="_blank">Share on Google</a></li>
                 </ul>
             </div>
         </div>
@@ -699,12 +721,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-xs-12 copyright">
-                <p>&#169; 2015-2016  <span class="dark semi-bold">Mark & Angel Hack Life, LLC</span> All Rights Reserved</p>
+                <p>&#169; 2015-2016  <span class="dark semi-bold">Marc & Angel, LLC</span> All Rights Reserved</p>
                 <p>
                     <span class="pull-left">Asian Efficiency:
                         <a href="http://www.asianefficiency.com" class="dark semi-bold" target="_blank">www.asianefficiency.com</a>
                     </span>
-                    <span class="pull-right">Marc & Angel Hack Life:
+                    <span class="pull-right">Marc & Angel, LLC:
                         <a href="http://www.marcandangel.com" class="dark semi-bold" target="_blank">www.marcandangel.com</a>
                     </span>
                 </p>
@@ -714,12 +736,8 @@
                     <li><a href="./privacy.html">Privacy policy</a></li>
                     <li><a href="./terms.html">Terms of use</a></li>
                 </ul>
+                <a href="http://www.commandmedia.net/" class="pull-right semi-bold command-link" target="_blank">Designed by Command Media</a>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid command-media-link-box">
-        <div class="row">
-            <div class="col-md-12"><a href="http://www.commandmedia.net/" class="pull-right" target="_blank">Designed by Command Media</a></div>
         </div>
     </div>
 
