@@ -2,7 +2,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
 }
-
+section{
+    background-color: #fff;
+}
 .light {
     font-weight: 300;
 }
@@ -107,6 +109,9 @@ body {
     box-shadow: 1px 1px 1px #192833;
 }
 /** Header section */
+#header {
+    position: relative;
+}
 .header {
     background: url('../images/header.jpg') center /cover no-repeat fixed;
 }
@@ -138,7 +143,26 @@ body {
     height: 150px;
     margin: 20px auto;
 }
-
+.logo-left {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    background: url('../images/asianefficiency-white.png') center no-repeat;
+    background-size: 100% auto;
+    height: 150px;
+    width: 240px;
+    margin: 20px auto;
+}
+.logo-right {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background: url('../images/marcandangel-white.png') center no-repeat;
+    background-size: 100% auto;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto;
+}
 .play-box {
     background: url('../images/play.png') center no-repeat;
     background-size: 100%;
@@ -445,6 +469,11 @@ footer {
 .full-screen .modal-dialog {
     width: 100%;
     margin: 0;
+}
+
+.big-screen .modal-dialog {
+    width: 70%;
+    margin: 50px 15%;
 }
 
 .modal-content {

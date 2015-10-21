@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        width: '570',
+        width: '100%',
         videoId: 'sRc84AZ0efY',
         events: {
             'onReady': onPlayerReady,
